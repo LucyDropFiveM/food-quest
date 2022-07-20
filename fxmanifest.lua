@@ -20,5 +20,9 @@ server_scripts{
     'server/main.lua',
 }
 
+dependencies {
+    'subtitles',
+}
+
 
 lua54 'yes'
