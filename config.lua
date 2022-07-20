@@ -1,4 +1,3 @@
 Config = {}
 
-Config.RRItem = 
-{'phone'}
+
