@@ -7,3 +7,6 @@ The script wont run unless the "subtitles" script is in your server started so m
 
 The MLO used for the script is linked here 
 https://forum.cfx.re/t/free-mlo-secret-lab-base/4849642 and made by Trues
+
+
+The script is in Swedish, You can change the subtiles however you seem fit
