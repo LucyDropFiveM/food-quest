@@ -1,2 +1,4 @@
 Config = {}
 
+Config.RRItem = 
+{'phone'}
