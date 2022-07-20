@@ -77,7 +77,7 @@ function SpawnZone()
         event = "foodquest:client:leaveFood", 
         icon = 'fa fa-etsy', 
         label = 'Lämna Mat Till RR', 
-        item = 'kebabpizza',
+        item = 'phone',
       },
     },
     distance = 1.5, 
