@@ -44,18 +44,18 @@ RegisterNetEvent('foodquest:client:talkToRR', function()
   local ped = PlayerPedId()
 
     FreezeEntityPosition(ped, true)
-    TriggerEvent('subtitles:client:drawSubtitles', 'Tju tju, Går inte o sticka under stolen med att man är hungrig', 4000)
+        QBCore.Functions.Notify('Hello im hungry', 4000)
     Wait(4000)
-    TriggerEvent('subtitles:client:drawSubtitles', 'Vill du hämta mig nåt o käka från Pizzerian nere i stan, Jag vill ha en kebabpizza UTAN SALLAD', 7500)
+        QBCore.Functions.Notify('Get me a pizza', 7500)
     Wait(7500)
-    TriggerEvent('subtitles:client:drawSubtitles', 'Kan inte tagga här ifrån för då piper bojan', 7500)
+        QBCore.Functions.Notify('Cant get away from here, broke my leg', 7500)
     Wait(7500)
-    TriggerEvent('subtitles:client:drawSubtitles', 'Kom tillbaks så får du en slant.', 4000)
+        QBCore.Functions.Notify('Come back and give the pizza and I will hand you some money', 4000)
     Wait(100)
     exports['qb-target']:RemoveZone("rrTalk")
         FreezeEntityPosition(ped, false)
 
-        QBCore.Functions.Notify('Ta dig till Pizzeria Verona', 'success', 7500)
+        QBCore.Functions.Notify('Go to the pizza shop, 'success', 7500)
     Wait(1000)
     SpawnZone()
 end)
@@ -76,8 +76,8 @@ function SpawnZone()
         type = "client", 
         event = "foodquest:client:leaveFood", 
         icon = 'fa fa-etsy', 
-        label = 'Lämna Mat Till RR', 
-        item = 'phone',
+        label = 'Leave food to person', 
+        item = 'pizza',
       },
     },
     distance = 1.5, 
